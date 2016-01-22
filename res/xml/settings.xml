@@ -87,5 +87,13 @@
             android:summary="@string/show_status_bar_icon_summary"
             android:persistent="false"
             android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="show_next_alarm"
+            android:title="@string/show_next_alarm_title"
+            android:summary="@string/show_next_alarm_summary"
+            android:persistent="false"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 </PreferenceScreen>
