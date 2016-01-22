@@ -61,6 +61,7 @@ public class SettingsActivity extends BaseActivity {
     public static final String KEY_WEEK_START = "week_start";
     public static final String KEY_SHOW_ALARM_ICON = "show_status_bar_icon";
     public static final String KEY_ALARM_SETTINGS = "key_alarm_settings";
+    public static final String KEY_SHOW_NEXT_ALARM = "show_next_alarm";
 
     public static final String DEFAULT_VOLUME_BEHAVIOR = "0";
     public static final String VOLUME_BEHAVIOR_SNOOZE = "1";
@@ -123,6 +124,11 @@ public class SettingsActivity extends BaseActivity {
                     (SwitchPreference) findPreference(KEY_SHOW_ALARM_ICON);
             showAlarmIconPref.setChecked(CMSettings.System.getInt(
                     getActivity().getContentResolver(), CMSettings.System.SHOW_ALARM_ICON, 1) == 1);
+
+            final SwitchPreference showNextAlarmPref =
+                    (SwitchPreference) findPreference(KEY_SHOW_NEXT_ALARM);
+            showNextAlarmPref.setChecked(CMSettings.System.getInt(
+                    getActivity().getContentResolver(), CMSettings.System.SHOW_NEXT_ALARM, 1) == 1);
         }
 
         @Override
@@ -169,6 +175,9 @@ public class SettingsActivity extends BaseActivity {
             } else if (KEY_SHOW_ALARM_ICON.equals(pref.getKey())) {
                 CMSettings.System.putInt(getActivity().getContentResolver(),
                         CMSettings.System.SHOW_ALARM_ICON, (Boolean) newValue ? 1 : 0);
+            } else if (KEY_SHOW_NEXT_ALARM.equals(pref.getKey())) {
+                CMSettings.System.putInt(getActivity().getContentResolver(),
+                        CMSettings.System.SHOW_NEXT_ALARM, (Boolean) newValue ? 1 : 0);
             }
             // Set result so DeskClock knows to refresh itself
             getActivity().setResult(RESULT_OK);
@@ -301,6 +310,10 @@ public class SettingsActivity extends BaseActivity {
             final SwitchPreference showAlarmIconPref =
                     (SwitchPreference) findPreference(KEY_SHOW_ALARM_ICON);
             showAlarmIconPref.setOnPreferenceChangeListener(this);
+
+            final SwitchPreference showNextAlarmPref =
+                    (SwitchPreference) findPreference(KEY_SHOW_NEXT_ALARM);
+            showNextAlarmPref.setOnPreferenceChangeListener(this);
         }
 
         private void updateAutoSnoozeSummary(ListPreference listPref, String delay) {
