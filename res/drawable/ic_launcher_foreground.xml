@@ -4,36 +4,16 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
-    android:viewportWidth="108"
-    android:viewportHeight="108">
-  <group>
-    <clip-path
-        android:pathData="M0,0h108v108h-108z"/>
+    android:viewportWidth="75"
+    android:viewportHeight="75">
+  <group android:translateX="12.5" android:translateY="12.5">
     <path
-        android:pathData="M54,79L54,54"
-        android:strokeWidth="2"
-        android:fillColor="#00000000"
-        android:strokeColor="#FFD250"
-        android:strokeLineCap="round"/>
+        android:pathData="M24.5001 11.6667C17.1534 11.6667 11.1667 17.6534 11.1667 25C11.1667 32.3467 17.1534 38.3334 24.5001 38.3334C31.8467 38.3334 37.8334 32.3467 37.8334 25C37.8334 17.6534 31.8467 11.6667 24.5001 11.6667ZM30.3001 29.76C30.1134 30.08 29.7801 30.2534 29.4334 30.2534C29.2601 30.2534 29.0867 30.2134 28.9267 30.1067L24.7934 27.64C23.7667 27.0267 23.0067 25.68 23.0067 24.4934V19.0267C23.0067 18.48 23.4601 18.0267 24.0067 18.0267C24.5534 18.0267 25.0067 18.48 25.0067 19.0267V24.4934C25.0067 24.9734 25.4067 25.68 25.8201 25.92L29.9534 28.3867C30.4334 28.6667 30.5934 29.28 30.3001 29.76Z"
+        android:fillColor="#016134"/>
     <path
-        android:pathData="M54,54m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"
-        android:fillColor="#F09F38"/>
-    <path
-        android:pathData="M28.54,28.54m-72,0a72,72 0,1 1,144 0a72,72 0,1 1,-144 0"
-        android:fillAlpha="0.6">
-      <aapt:attr name="android:fillColor">
-        <gradient
-            android:gradientRadius="72"
-            android:centerX="28.54"
-            android:centerY="28.54"
-            android:type="radial">
-          <item android:offset="0" android:color="#19FFFFFF"/>
-          <item android:offset="1" android:color="#00FFFFFF"/>
-        </gradient>
-      </aapt:attr>
-    </path>
+        android:pathData="M25.5001 11.6667C18.1534 11.6667 12.1667 17.6534 12.1667 25C12.1667 32.3467 18.1534 38.3334 25.5001 38.3334C32.8467 38.3334 38.8334 32.3467 38.8334 25C38.8334 17.6534 32.8467 11.6667 25.5001 11.6667ZM31.3001 29.76C31.1134 30.08 30.7801 30.2534 30.4334 30.2534C30.2601 30.2534 30.0867 30.2134 29.9267 30.1067L25.7934 27.64C24.7667 27.0267 24.0067 25.68 24.0067 24.4934V19.0267C24.0067 18.48 24.4601 18.0267 25.0067 18.0267C25.5534 18.0267 26.0067 18.48 26.0067 19.0267V24.4934C26.0067 24.9734 26.4067 25.68 26.8201 25.92L30.9534 28.3867C31.4334 28.6667 31.5934 29.28 31.3001 29.76Z"
+        android:fillColor="#ffffff"/>
   </group>
 </vector>
